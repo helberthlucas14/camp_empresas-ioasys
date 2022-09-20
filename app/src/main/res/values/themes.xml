@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Empresas" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/beige</item>
+        <item name="android:navigationBarColor">@color/colorNavBar</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/medium_pink</item>
+        <item name="colorPrimaryDark">@color/dark_pink</item>
+        <item name="colorAccent">@color/neon_red</item>
+        <item name="android:navigationBarColor">@color/colorNavBar</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+    <style name="Theme.Company" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/medium_pink</item>
+        <item name="colorPrimaryDark">@color/dark_pink</item>
+        <item name="colorAccent">@color/neon_red</item>
+        <item name="android:navigationBarColor">@color/colorNavBar</item>
+        <item name="android:windowBackground">@color/beige</item>
+    </style>
+
+</resources>

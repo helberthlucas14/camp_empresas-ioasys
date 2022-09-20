@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginFragment">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/img_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:autoSizeMinTextSize="14sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/text_subtitle"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:autoSizeMinTextSize="16sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/Lorem"
+        android:textColor="@color/charcoal_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ilEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/txtSubTitle"
+        app:layout_constraintStart_toStartOf="@id/txtSubTitle"
+        app:layout_constraintTop_toBottomOf="@id/txtSubTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp"
+            android:autofillHints="emailAddress"
+            android:drawableStart="@drawable/ic_email_medium_pink"
+            android:drawablePadding="8dp"
+            android:hint="@string/text_hint_email"
+            app:errorEnabled="true"
+            app:hintEnabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ilPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        app:errorEnabled="true"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/txtSubTitle"
+        app:layout_constraintStart_toStartOf="@id/txtSubTitle"
+        app:layout_constraintTop_toBottomOf="@id/ilEmail"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_padlock_medium_pink"
+            android:drawablePadding="8dp"
+            android:hint="@string/text_hint_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:errorEnabled="true"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAlert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:lineHeight="12sp"
+        android:text="@string/text_alert"
+        android:textAlignment="center"
+        android:textColor="@color/neon_red"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        app:layout_constraintEnd_toEndOf="@id/txtSubTitle"
+        app:layout_constraintStart_toStartOf="@id/txtSubTitle"
+        app:layout_constraintTop_toBottomOf="@id/ilPassword" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_state_background"
+        android:gravity="center"
+        android:text="@string/text_btn_login"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/txtSubTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtSubTitle"
+        app:layout_constraintTop_toBottomOf="@id/ilPassword" />
+
+
+    <View
+        android:id="@+id/viewLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gpLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="viewLoading,pbLoading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

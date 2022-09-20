@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Empresas</string>
+    <string name="home_name">Home</string>
+    <string name="text_subtitle">bem vindo ao \n empresas</string>
+    <string name="Lorem">Lorem ipsum dolor sit amet, conteturn \nadipiscing elit. Nunc accumsan.</string>
+    <string name="text_hint_email">E-mail</string>
+    <string name="text_hint_password">Senha</string>
+    <string name="text_alert">Credenciais informadas são inválidas, tente novamente.</string>
+    <string name="text_btn_login">entrar</string>
+    <string name="text_initial">Clique na busca para iniciar</string>
+    <string name="home_description_logo">Logo Ioasys</string>
+    <string name="text_query_hint_action_search">Pesquisar</string>
+    <string name="title_action_search">Pesquisar</string>
+    <string name="login_field_error">Mandatory Field</string>
+    <string name="no_connection">Sem acesso a internet</string>
+    <string name="company_not_found">Empresa não encontrada</string>
+</resources>
